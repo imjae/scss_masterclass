@@ -1,13 +1,12 @@
-@import "_variables";
-@import "_mixin";
+@import "_buttons";
 
 a {
-  font-size: $size;
-  margin-bottom: 20px;
-  &:nth-child(odd) {
-    @include link("odd");
-  }
-  &:nth-child(even) {
-    @include link("even");
-  }
+  @extend %button;
+  text-decoration: none;
 }
+
+button {
+  @extend %button;
+  border: none;
+}
+
