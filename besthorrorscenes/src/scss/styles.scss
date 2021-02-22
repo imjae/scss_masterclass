@@ -1,0 +1,33 @@
+@import "_variables";
+
+section.wrapper {
+color: $bg_red;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+//   grid-template-rows: 500px;
+
+  section.header {
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    background-color: $bg_white;
+
+    h1.title{
+        font-size: 32px;
+    }
+
+    div.contents {
+      background-color: $bg_white;
+    }
+
+    nav.navigation {
+        a {
+
+        }
+    }
+
+  }
+  section.contents {
+    background-color: $bg_red;
+  }
+}
