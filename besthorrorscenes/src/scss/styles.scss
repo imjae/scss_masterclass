@@ -44,7 +44,13 @@ div.wrapper {
 
       nav.navigation {
         margin-top: 1.5em;
+        width: 25em;
+        display: flex;
+        flex-wrap: wrap;
+
         a {
+          margin-right: 1em;
+          margin-bottom: 0.5em;
           color: $nav_fontcolor;
         }
       }
@@ -52,12 +58,12 @@ div.wrapper {
   }
 
   div.contents {
+    background-color: $bg_red;
     padding-left: 35%;
     height: 5000px;
     section.contents_item {
       height: 600px;
-      background-color: $bg_red;
-      border-bottom: 1px solid black;
+      background: linear-gradient(to bottom, rgba(0,0,0, 0.2), rgba(0,0,0, 0)20% 100%);
     }
   }
 }
