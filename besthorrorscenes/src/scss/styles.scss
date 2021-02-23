@@ -1,33 +1,63 @@
 @import "_variables";
 
-section.wrapper {
-color: $bg_red;
+html,
+body {
   height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-//   grid-template-rows: 500px;
+  min-height: 100%;
+}
 
-  section.header {
+div.wrapper {
+  color: $bg_red;
+  display: flex;
+  flex-direction: column;
+  //   grid-template-rows: 500px;
+
+  div.header {
+    height: 100%;
     display: grid;
-    grid-template-rows: 1fr 2fr;
+    position: fixed;
+    width: 35%;
+    grid-template-rows: 0.8fr 1fr;
     background-color: $bg_white;
 
-    h1.title{
-        font-size: 32px;
+    div.title_group {
+      padding: 1.5em;
+      font-size: 48px;
+      align-self: center;
     }
 
-    div.contents {
+    div.contents_group {
+      padding: 4em;
       background-color: $bg_white;
-    }
+      font-size: 18px;
 
-    nav.navigation {
-        a {
-
+      .p_group {
+        p:nth-child(1) {
+          width: 14em;
+          font-size: 20px;
+          margin-bottom: 1em;
         }
-    }
+        p:nth-child(2) {
+          width: 18em;
+        }
+      }
 
+      nav.navigation {
+        margin-top: 1.5em;
+        a {
+          color: $nav_fontcolor;
+        }
+      }
+    }
   }
-  section.contents {
-    background-color: $bg_red;
+
+  div.contents {
+    padding-left: 35%;
+    height: 5000px;
+    section.contents_item {
+      height: 600px;
+      background-color: $bg_red;
+      border-bottom: 1px solid black;
+    }
   }
 }
