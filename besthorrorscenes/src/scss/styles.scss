@@ -14,7 +14,7 @@ div.wrapper {
   //   grid-template-rows: 500px;
   div.header {
     position: fixed;
-    width:550px;
+    width:620px;
     height: 100%;
     display: grid;
     grid-template-rows: 0.8fr 1fr;
@@ -22,7 +22,7 @@ div.wrapper {
 
     div.title_group {
       padding: 1.5em;
-      font-size: 48px;
+      font-size: 56px;
       font-weight: 600;
       align-self: center;
     }
@@ -58,7 +58,7 @@ div.wrapper {
   div.contents {
     color: $bg_white;
     height: 100%;
-    margin-left: 550px;
+    margin-left: 620px;
     
     section.contents_items {
       width:100%;
