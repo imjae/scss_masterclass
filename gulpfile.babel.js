@@ -8,9 +8,9 @@ sass.compiler = require("node-sass");
 
 const routes = {
   css: {
-    watch: "besthorrorscenes/src/scss/*",
-    src: "besthorrorscenes/src/scss/styles.scss",
-    dest: "besthorrorscenes/dist/css"
+    watch: "paintbox/src/scss/*",
+    src: "paintbox/src/scss/styles.scss",
+    dest: "paintbox/dist/css"
   }
 };
 
@@ -31,7 +31,7 @@ const watch = () => {
   gulp.watch(routes.css.watch, styles);
 };
 
-const clean = () => del(["besthorrorscenes/dist/"]);
+const clean = () => del(["paintbox/dist/"]);
 
 const prepare = gulp.series([clean]);
 
