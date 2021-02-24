@@ -1,4 +1,4 @@
-%screenWidthByhaedear {
+%screenWidthByhaedearWidth {
   @media screen and (min-width: 1600px) {
     // @extend %widthGreatThan1600_header;
     width: 34%;
@@ -17,21 +17,62 @@
   }
 }
 
-%screenWidthByContents {
+%screenWidthByContentsWidth {
   @media screen and (min-width: 1600px) {
     // @extend %widthGreatThan1600_header;
     margin-left: 34%;
-    position: fixed;
   }
   @media screen and (min-width: 1200px) and (max-width: 1600px) {
     margin-left: 600px;
-    position: fixed;
   }
   @media screen and (min-width: 840px) and (max-width: 1200px) {
     margin-left: 420px;
-    position: fixed;
   }
   @media screen and (max-width: 840px) {
-    position: block;
+  }
+}
+
+%screenWidthByContentsFontSize {
+  @media screen and (min-width: 1600px) {
+    font-size: 30pt;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    font-size: 20pt;
+  }
+  @media screen and (min-width: 840px) and (max-width: 1200px) {
+    font-size: 20pt;
+  }
+  @media screen and (max-width: 840px) {
+    font-size: 20pt;
+  }
+}
+
+%screenWidthByheaderFontSize {
+  @media screen and (min-width: 1600px) {
+    font-size: 50pt;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    font-size: 50pt;
+  }
+  @media screen and (min-width: 840px) and (max-width: 1200px) {
+    font-size: 30pt;
+  }
+  @media screen and (max-width: 840px) {
+    font-size: 50pt;
+  }
+}
+
+%screenWidthByContentsItemHeight {
+  @media screen and (min-width: 1600px) {
+    height: 100vh;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    height: 100vh;
+  }
+  @media screen and (min-width: 840px) and (max-width: 1200px) {
+    height: 100vh;
+  }
+  @media screen and (max-width: 840px) {
+    height: 60vh;
   }
 }
