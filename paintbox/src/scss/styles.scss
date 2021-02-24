@@ -1,0 +1,213 @@
+@import "_variables";
+
+html,
+body {
+  font-family: "freight-text-pro", "Times", "Times New Roman", serif;
+  font-size: 16px;
+  height: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+header {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 120px;
+  margin-left: 7em;
+  margin-right: 7em;
+
+  nav.header_group {
+    top: 40px;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      li {
+        height: 100%;
+        button {
+          height: 100%;
+          border: none;
+          background-color: white;
+          margin-right: 3em;
+          font-weight: 600;
+          &:hover {
+            cursor: pointer;
+            opacity: 0.5;
+          }
+        }
+      }
+    }
+  }
+  a.logo {
+    color: #414141;
+    height: 58px;
+    left: 50%;
+    margin-left: -29px;
+    margin-top: -29px;
+    position: absolute;
+    top: 77px;
+    white-space: nowrap;
+    width: 58px;
+    z-index: 11;
+    svg {
+      height: 100%;
+    }
+  }
+}
+
+main {
+  .section_grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    div.section01 {
+      display: grid;
+      margin-top: 4em;
+      grid-template-columns: repeat(2, 1fr);
+      div.leftbox {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      div.rightbox {
+        div.content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          background-color: #f9dbbe;
+
+          p {
+            font-size: 30pt;
+            margin-left: 3.3em;
+            margin-right: 3.3em;
+            margin-bottom: 0.7em;
+            color: #414141;
+            text-align: center;
+          }
+          a {
+            border: #414141 2px solid;
+            width: 295px;
+            height: 55px;
+            display: grid;
+            grid-template-columns: 240px 55px;
+            text-decoration: none;
+            justify-items: center;
+            align-items: center;
+            margin-top: 0.7em;
+            color: #414141;
+
+            span::after {
+              content: "";
+              width: 15px;
+              height: 15px;
+              display: inline-block;
+              border-top: 1.8px solid #414141;
+              border-right: 1.8px solid #414141;
+              transform: rotate(45deg);
+            }
+
+            &:hover {
+              background-color: #414141;
+              color: white;
+
+              span::after {
+                content: "";
+                width: 15px;
+                height: 15px;
+                border-top: 1.8px solid #ffffff;
+                border-right: 1.8px solid #ffffff;
+                transform: rotate(45deg);
+              }
+            }
+          }
+        }
+      }
+    }
+    div.section02 {
+      display: grid;
+      margin-top: 5em;
+      margin-left: $section_margin_left_right;
+      margin-right: $section_margin_left_right;
+      grid-template-columns: repeat(2, 1fr);
+
+      div.leftbox {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      div.rightbox {
+        div.content {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+          background-color: #f3ede8;
+
+          p {
+            font-size: 30pt;
+            margin-left: 3.3em;
+            margin-right: 3.3em;
+            margin-bottom: 0.7em;
+            color: #414141;
+            text-align: center;
+          }
+          a {
+            border: #414141 2px solid;
+            width: 295px;
+            height: 55px;
+            display: grid;
+            grid-template-columns: 240px 55px;
+            text-decoration: none;
+            justify-items: center;
+            align-items: center;
+            margin-top: 0.7em;
+            color: #414141;
+
+            span::after {
+              content: "";
+              width: 15px;
+              height: 15px;
+              display: inline-block;
+              border-top: 1.8px solid #414141;
+              border-right: 1.8px solid #414141;
+              transform: rotate(45deg);
+            }
+
+            &:hover {
+              background-color: #414141;
+              color: white;
+
+              span::after {
+                content: "";
+                width: 15px;
+                height: 15px;
+                border-top: 1.8px solid #ffffff;
+                border-right: 1.8px solid #ffffff;
+                transform: rotate(45deg);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
