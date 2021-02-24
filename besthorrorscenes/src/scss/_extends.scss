@@ -1,9 +1,37 @@
-%button {
-    border-radius: 7px;
-    font-size: 12px;
-    text-transform: uppercase;
-    padding: 5px 10px;
-    background-color: peru;
-    color: white;
-    font-weight: 500;
+%screenWidthByhaedear {
+  @media screen and (min-width: 1600px) {
+    // @extend %widthGreatThan1600_header;
+    width: 34%;
+    position: fixed;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    width: 600px;
+    position: fixed;
+  }
+  @media screen and (min-width: 840px) and (max-width: 1200px) {
+    width: 420px;
+    position: fixed;
+  }
+  @media screen and (max-width: 840px) {
+    position: block;
+  }
+}
+
+%screenWidthByContents {
+  @media screen and (min-width: 1600px) {
+    // @extend %widthGreatThan1600_header;
+    margin-left: 34%;
+    position: fixed;
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    margin-left: 600px;
+    position: fixed;
+  }
+  @media screen and (min-width: 840px) and (max-width: 1200px) {
+    margin-left: 420px;
+    position: fixed;
+  }
+  @media screen and (max-width: 840px) {
+    position: block;
+  }
 }
