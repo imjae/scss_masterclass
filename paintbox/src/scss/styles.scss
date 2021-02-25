@@ -210,18 +210,31 @@ main {
       div.bottom {
         margin-bottom: 1em;
         display: grid;
+        column-gap: 1em;
         width: 100%;
         grid-template-columns: repeat(3, 1fr);
 
         div.product {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
           div.detail {
             display: flex;
             flex-direction: column;
             align-items: center;
-
+            &:hover {
+              cursor: pointer;
+              img {
+                content: url("//cdn.shopify.com/s/files/1/0086/4865/4895/products/gildedvelvetblobs_320x400_crop_center.png?v=1605563796");
+              }
+              .price_detail_group div.price{
+                visibility: hidden;
+              } 
+              .price_detail_group div.view_detail {
+                visibility: visible;
+              }
+            }
             .category {
               font-size: small;
               span {
@@ -233,9 +246,21 @@ main {
               font-size: 22pt;
               margin-bottom: 0.5em;
             }
-            .price {
-              color: #989898;
-              font-size: smaller;
+            .price_detail_group {
+                display: flex;
+                justify-content: center;
+              div {
+                position: absolute;
+                color: #989898;
+                font-size: smaller;
+              }
+              .price {
+              }
+              .view_detail {
+                text-decoration: underline;
+                position: relative;
+                visibility: hidden;
+              }
             }
           }
           button.addCart {
