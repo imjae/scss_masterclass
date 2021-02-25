@@ -16,3 +16,32 @@
     position: block;
   }
 }
+
+%defaultButtonSetup {
+  background-color: white;
+  border: 1.8px solid #414141;
+  &:hover {
+    cursor: pointer;
+    background-color: #414141;
+    color: #fff;
+  }
+}
+
+%buttonRightArrowdefault {
+  content: "";
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+  border-top: 1.8px solid #414141;
+  border-right: 1.8px solid #414141;
+  transform: rotate(45deg);
+}
+
+%buttonRightArrowMouseOver {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-top: 1.8px solid #ffffff;
+  border-right: 1.8px solid #ffffff;
+  transform: rotate(45deg);
+}
